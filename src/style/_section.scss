@@ -1,0 +1,53 @@
+.section {
+  display: flex;
+  color: white;
+  margin: 250px;
+
+  justify-content: center;
+  align-items: center;
+
+  button {
+    display: block;
+
+    &:nth-child(7) {
+      @include btn-variant($twitter-blud, $twitter-blud, #16212b);
+    }
+
+    &:last-child {
+      @include btn-variant($twitter-blud, white, $twitter-blud);
+    }
+  }
+
+  form {
+    border: solid 1px;
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-color: $gray-color;
+    > * {
+      margin: 10px;
+    }
+    > h1 {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+    .input {
+      margin-top: 2px;
+    }
+
+    .label {
+      margin-bottom: 0px;
+    }
+
+    p {
+      text-align: center;
+      color: $gray-color;
+    }
+
+    a {
+      color: $twitter-blud;
+    }
+  }
+}

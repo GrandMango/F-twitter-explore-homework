@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $container-padding-x $container-padding-y;
+  border-bottom: $gray-color solid 2px;
+
+  button {
+    @extend .menu;
+    &:first-child {
+      @include btn-variant(#1da1f2, #1da1f2, #16212b);
+    }
+    &:last-child {
+      @include btn-variant(#1da1f2, white, #1da1f2);
+    }
+  }
+}
